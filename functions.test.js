@@ -1,5 +1,5 @@
-import { expect } from '@jest/globals';
-import { isPlainObject, makePairs, without, isEmpty, isEqualDeep } from './functions.js';
+import { expect, test } from '@jest/globals';
+import { isPlainObject, makePairs, without, isEmpty, isEqualDeep, getUserName } from './functions.js';
 
 test('isPlainObject() is correctly implemented', () => {
 	expect(isPlainObject('aaaaaaaaa')).toBe(false);
@@ -37,4 +37,8 @@ test('isEmpty() is correctly implemented', () => {
 test('isEqualDeep() is correctly implemented', () => {
 	expect(isEqualDeep({ a: 1, b: { c: 1 } }, { a: 1, b: { c: 1 } })).toBe(true);
 	expect(isEqualDeep({ a: 1, b: { c: 1 } }, { a: 1, b: { c: 2 } })).toBe(false);
+});
+
+it('matches if username has the correct prefix', () => {
+	expect(getUserName()).toEqual(expect.stringContaining('user_'));
 });

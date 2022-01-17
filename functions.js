@@ -31,3 +31,7 @@ export const isEmpty = (obj) => {
 export const isEqualDeep = (obj1, obj2) => {
 	return _.isEqual(obj1, obj2);
 };
+
+export const getUserName = () => {
+	return 'user_james';
+}
