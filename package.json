@@ -2,9 +2,10 @@
 	"name": "jestimport",
 	"version": "1.0.0",
 	"description": "",
+	"type": "module",
 	"main": "functions.js",
 	"scripts": {
-		"test": "NODE_OPTIONS=--experimental-vm-modules jest"
+		"test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
 	},
 	"keywords": [],
 	"author": "",
@@ -13,6 +14,7 @@
 		"lodash": "^4.17.21"
 	},
 	"devDependencies": {
+		"cross-env": "^7.0.3",
 		"jest": "^27.4.7"
 	}
 }

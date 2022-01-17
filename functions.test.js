@@ -1,5 +1,5 @@
-const { expect } = require('@jest/globals');
-const { isPlainObject, makePairs, without, isEmpty, isEqualDeep } = require('./functions');
+import { expect } from '@jest/globals';
+import { isPlainObject, makePairs, without, isEmpty, isEqualDeep } from './functions.js';
 
 test('isPlainObject() is correctly implemented', () => {
 	expect(isPlainObject('aaaaaaaaa')).toBe(false);
