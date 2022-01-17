@@ -1,15 +1,18 @@
 {
-  "name": "jestimport",
-  "version": "1.0.0",
-  "description": "",
-  "main": "functions.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  }
+	"name": "jestimport",
+	"version": "1.0.0",
+	"description": "",
+	"main": "functions.js",
+	"scripts": {
+		"test": "NODE_OPTIONS=--experimental-vm-modules jest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"jest": "^27.4.7"
+	}
 }
