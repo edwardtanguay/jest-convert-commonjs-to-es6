@@ -35,3 +35,4 @@ export const isEqualDeep = (obj1, obj2) => {
 export const getUserName = () => {
 	return 'user_james';
 }
+console.log(0.1 + 0.2);

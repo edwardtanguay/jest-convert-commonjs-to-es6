@@ -40,5 +40,5 @@ test('isEqualDeep() is correctly implemented', () => {
 });
 
 it('matches if username has the correct prefix', () => {
-	expect(functions.getUserName()).toEqual(expect.stringContaining('user_'));
+	expect(functions.getUserName()).toEqual(expect.stringMatching('^user_'));
 });
