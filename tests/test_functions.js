@@ -1,5 +1,5 @@
 import { expect, test } from '@jest/globals';
-import * as functions from './functions.js';
+import * as functions from '../functions.js';
 
 test('isPlainObject() is correctly implemented', () => {
 	expect(functions.isPlainObject('aaaaaaaaa')).toBe(false);
